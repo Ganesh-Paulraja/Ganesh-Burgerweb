@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.new-form{
+    width: 500px;
+    height: 600px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid yellow;
+    padding: 20px 85px;
+}
+
+
+input{
+    background-color: rgb(255, 255, 213);
+    margin-top: 5px;
+    margin-bottom: 45px;
+    width: 250px;
+    height: 25px;
+    border: 2px solid white;
+    outline: none;
+    padding: 0 10px;
+    color: black;
+    font-weight: 400;
+    display: block;
+    
+}
+
+input::placeholder{
+    color: rgb(77, 77, 77);
+    font-weight: 600;
+}
+
+legend{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: greenyellow;
+}
+
+label{
+    color: yellow;
+    
+}
+
+.user-phone-number,.user-name-box,.user-email-box,.user-password,.user-confirm-password
+{
+    position: relative;
+}
+.user-phone-number::-webkit-outer-spin-button,
+.user-phone-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.user-phone-number[type=number] {
+    -moz-appearance: textfield;
+  }
+form i{
+    position: absolute;
+    top: 30px;
+    left: 230px;
+    color: red;
+    visibility:hidden;
+    
+}
+
+.ion-checkmark-circled{
+    color: green;
+}
+
+.ion-android-alert{
+    color: red;
+}
+div.success i.ion-checkmark-circled{
+    visibility: visible;
+}
+
+div.error i.ion-android-alert{
+    visibility: visible;
+   
+}
+
+form span{
+    position: absolute;
+    top: 55px;
+    color: red;
+}
+
+div.success input{
+    border: 2px solid green;
+}
+
+div.error input{
+    border: 2px solid red;
+}
+
+
+.form-submit-btn{
+    background-color: yellowgreen;
+    border: 0;
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.form-submit-btn:active{
+    background-color: green;
+}
+.form-cancel-btn{
+    background-color: rgb(252, 50, 50);
+    border: 0;
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+.form-cancel-btn:active{
+    color: red;
+}
+
+.two-btn{
+    width: 100%;
+   
+}
+
+@media screen and (max-width: 750px) {
+   .new-form{
+       border: none;
+       width: 100vw;
+       height: 100vh;
+       
+   }
+
+   .form-cancel-btn{
+       margin: 0;
+   }
+}
+
+@media screen and (max-width: 400px) {
+    
+    .new-form{
+        padding-left: 10px;
+        overflow-x: hidden;
+    }
+}

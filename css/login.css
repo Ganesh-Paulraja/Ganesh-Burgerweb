@@ -1,0 +1,136 @@
+.login-box{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.782);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0,0);
+    transition: transform .5s ease;
+}
+.login-box-active{
+    transform: scale(1,1) !important;
+}
+.login-black-box{
+    width: 500px;
+    height: 600px;
+    background-color: black;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-black-box .fa:hover{
+    color: rgb(255, 255, 128);
+}
+.login-black-box .fa:active{
+    color: yellow;
+}
+.login-box-options{
+    width: 300px;
+    height: 450px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-box-options h3{
+    background-color: yellow;
+    color: black;
+    width: 200px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+}
+.login-fb{
+    width: 230px;
+    height: 40px;
+    background-color: #5670a5;
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    padding: 3px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.login-fb .fa-facebook-official{
+    color: blue;
+    font-size: 30px;
+    position: inherit;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.login-twitter{
+    text-decoration: none;
+    background-color: #6cb6ee;
+    width: 230px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+.login-twitter .fa-twitter{
+    position: inherit;
+    color: blueviolet;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.login-google{
+    text-decoration: none;
+    background-color: #4285f4;
+    width: 230px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.login-google .fa-google{
+    position: inherit;
+    color: black;
+    font-size: 24px;
+    margin-right: 10px;
+}
+.login-black-box .fa-times{
+    color: white;
+    font-size: 35px;
+    position: relative;
+    display: block;
+    left: 330px;
+    top: -240px
+   }
+@media screen and (max-width: 750px) {
+    .login-black-box{
+        width: 100vw;
+        height: 110vh;
+        border: none;
+        border-radius: none !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .login-black-box .fa-times{
+       top: -270px;
+       left: 270px;
+    }
+}

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Vertical-bar */
+.vertical-bar{
+  background-color: green;
+  width: 80px;
+  height: 100vh;
+  position: relative;
+  z-index: 5;
+}
+
+.black-bar{
+  width: 80px;
+  height: 55vh;
+  background-color: black;
+  text-align: center;
+
+}
+
+.black-bar .fa{
+  color: white;
+  font-size: 40px;
+  margin-top: 50px;
+
+}
+
+.yellow-bar{
+  background-color: yellow;
+  width: 80px;
+  height: 45vh;
+  text-align: center;
+  
+}
+
+.yellow-bar .fa{
+  font-size: 35px;
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  border: 3px solid rgb(92, 92, 3);
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+
+}
+/* --------------------- */
+
+
+/* Background image */
+.full-box{
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(../karolina-kolodziejczak-7CLArMn7TCM-unsplash.jpg);
+  background-position: center; 
+  background-size: cover;
+  overflow-x: hidden;
+  display: flex;
+}
+
+.content-box{
+  flex: 1;
+}
+
+@media screen and (max-width:750px) {
+  .black-bar{
+    display: none;
+  }
+  .full-box{
+    flex-direction: column-reverse;
+    height: 120vh;
+  }
+  .vertical-bar{
+    height: max-content;
+  }
+  .yellow-bar{
+    width: 100vw;
+    height: 100px;
+  }
+}

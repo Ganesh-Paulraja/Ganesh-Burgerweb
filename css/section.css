@@ -1,0 +1,54 @@
+.section-1{
+    color: white;
+}
+.section-1 h2 span{
+    color: yellow;
+}
+.section-1{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 28px;
+}
+.section-1 .explore-btn{
+    width: 80px;
+    background-color: yellow;
+    border: 0;
+    height: 35px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.section-2{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.446);
+}
+
+.section-2 img{
+    width: 200px;
+    height: 130px;
+}
+.yellow-box{
+    width: 200px;
+    background-color: yellow;
+    padding: 10px 5px;
+    height: 130px;
+}
+.section-2 .link-btn{
+    text-align: center;
+    padding-top: 20px;
+}
+.prev-btn,.next-btn{
+    margin-right: 20px;
+    color: black;
+}
+.prev-btn:hover,.next-btn:hover{
+    color: white;
+}
+
+.prev-btn:active,.next-btn:active{
+    color: red;
+}
